@@ -28,16 +28,7 @@ ChartsJS is used to render the chart components such as Bar graphs and Doughnut 
 https://prakhar-ipl-dashboard.netlify.app/
 
 ## Dependencies
-"dependencies": {
-<br />"@material-tailwind/react": "^0.3.4",
-<br />"chart.js": "2.9.4",
-<br />"react": "^17.0.2",
-<br />"react-dom": "^17.0.2",
-<br />"react-router-dom": "^5.2.0",
-<br />"react-scripts": "4.0.3",
-<br />"web-vitals": "^1.0.1"
-<br />}
-<br />
+
 - @material-tailwind/react
 Used for ui components namely card components, sidebar, navbar with Tailwind and MaterialUI
 - chart.js
