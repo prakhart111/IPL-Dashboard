@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import '@material-tailwind/react/tailwind.css';
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+*{
+    font-family: 'Mulish',sans-serif;
+    font-weight: 600;
+    max-width:100vw;
+    box-sizing:border-box;
+    touch-action:pan-y;
+    scroll-behavior: smooth;
+}
+.App{
+    background: #acb6e570;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #86fde870, #acb6e570);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #86fde870, #acb6e570); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.AdminNavbar{
+    background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}

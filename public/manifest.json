@@ -1,0 +1,32 @@
+{
+  "short_name": "IPL DASH",
+  "name": "IPL DashBoard by Prakhar Tandon",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x23",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo128.png",
+      "type": "image/png",
+      "sizes": "128x92"
+    },
+    {
+      "src": "logo256.png",
+      "type": "image/png",
+      "sizes": "256x183"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x366",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "scope":"/",
+  "display": "standalone",
+  "theme_color": "#111827",
+  "background_color": "#ffffff"
+}
