@@ -4,7 +4,22 @@
 <br />
 Renders data beautifully and easy-to understand manner from a Kaggle Dataset of IPL matches between 2007 to 2017
 <br/>
+
 ### Developed by Prakhar Tandon
+
+## BONUSES from Klutchh
+
+>> All Bonus Done, only one Partial
+
+- Made Using ReactJS
+- 100% responsive
+- PWA
+- Offline Useable (Partial) 
+<br />Loads a page "offline.html" while offline ( stored in cache using ServiceWorker )
+- Optimised Load Time 
+<br />Optimal algorithms + index.html is also cached
+
+
 
 Link to Dataset : https://www.kaggle.com/saurav9786/indian-premier-league-match-analysis
 
