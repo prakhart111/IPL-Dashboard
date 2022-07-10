@@ -11,12 +11,12 @@ Renders data beautifully and easy-to understand manner from a Kaggle Dataset of 
 
 >> All Bonus Done, only one Partial
 
-- Made Using ReactJS
-- 100% responsive
-- PWA
+- ✅ Made Using ReactJS
+- ✅ 100% responsive
+- ✅ PWA
 - Offline Useable (Partial) 
 <br />Loads a page "offline.html" while offline ( stored in cache using ServiceWorker )
-- Optimised Load Time 
+- ✅ Optimised Load Time 
 <br />Optimal algorithms + index.html is also cached
 
 
