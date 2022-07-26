@@ -31,7 +31,7 @@ export default function Dashboard({WonPlayed, teamsShort}) {
 
 
            {WonPlayed?.map((item,i)=>
-               i!=4 && <div key={item["team_name"]} className={`sm:col-start-${i%3 + 1} sm:col-end-${i%3 + 2} px-2 mb-2 sm:m-2 2xl:m-5`}>
+               i!==4 && <div key={item["team_name"]} className={`sm:col-start-${i%3 + 1} sm:col-end-${i%3 + 2} px-2 mb-2 sm:m-2 2xl:m-5`}>
                     <DounutChart 
                         teamData = { [item["won"] , item["played"] - item["won"]] }
                         canvasID={`${teamsShort[i]}`}
