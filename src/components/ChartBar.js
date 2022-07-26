@@ -35,10 +35,15 @@ export default function ChartBar({playedArray,wonArray,teamsShort}) {
                 title: {
                     display: true,
                     text: 'Played VS Matches Won by each Team',
+                    fontSize : 15,
                 },
                 tooltips: {
                     mode: 'index',
                     intersect: false,
+                    backgroundColor: '#333399',
+                    titleAlign:'center',
+                    padding:10,
+                    boxPadding:3,
                 },
                 hover: {
                     mode: 'nearest',

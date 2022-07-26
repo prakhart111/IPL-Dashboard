@@ -44,7 +44,7 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
                 </div>
 
                 <div className="flex justify-between items-center w-full">
-                    <h4 className="uppercase text-white text-sm tracking-wider mt-1">
+                    <h4 className="uppercase text-white text-md tracking-wider mt-1">
                         {location === '/'
                             ? 'DASHBOARD'
                             : location.toUpperCase().replace('/', '')}
@@ -66,17 +66,19 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
                                 }}
                             > 
                                 <DropdownItem color="lightBlue">
-                                    Developed for Klutchh
+                                    <a href='https://www.kaggle.com/saurav9786/indian-premier-league-match-analysis' >Link to Kaggle Dataset</a>
                                 </DropdownItem>
                                 <DropdownItem color="lightBlue">
-                                    <a className="text-indigo-700 font-bold" href='https://linktr.ee/prakhartandon'>Prakhar Tandon</a>
+                                    <a className="text-indigo-800 font-bold" href='https://linktr.ee/prakhartandon'>Prakhar Tandon</a>
                                 </DropdownItem>
                                 
                             </Dropdown>
                         </div>
                     </div>
+                    
                 </div>
             </div>
+                <p className='text-sm sm:text-md md:pr-8 md:pl-10 text-white font-bold pt-4 mb-0'>Graphically displays and analyses the trends and data regarding all IPL matches from 2007 to 2017.</p>
         </nav>
     );
 }

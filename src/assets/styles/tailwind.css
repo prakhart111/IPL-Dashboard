@@ -74,8 +74,7 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-	-webkit-text-decoration: underline dotted;
-	        text-decoration: underline dotted;
+	text-decoration: underline dotted;
 }
 /**
 Add the correct font weight in Edge and Safari.
@@ -361,14 +360,6 @@ img {
 textarea {
   resize: vertical;
 }
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #9ca3af;
-}
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -551,6 +542,9 @@ video {
 .ml-6{
 	margin-left: 1.5rem;
 }
+.mb-0{
+	margin-bottom: 0px;
+}
 .mt-20{
 	margin-top: 5rem;
 }
@@ -566,26 +560,26 @@ video {
 .mb-5{
 	margin-bottom: 1.25rem;
 }
-.mb-0{
-	margin-bottom: 0px;
-}
 .mt-4{
 	margin-top: 1rem;
 }
-.-mt-24{
-	margin-top: -6rem;
-}
-.mb-14{
-	margin-bottom: 3.5rem;
+.-mt-32{
+	margin-top: -8rem;
 }
 .mb-10{
 	margin-bottom: 2.5rem;
+}
+.mb-14{
+	margin-bottom: 3.5rem;
 }
 .ml-4{
 	margin-left: 1rem;
 }
 .mr-4{
 	margin-right: 1rem;
+}
+.ml-0{
+	margin-left: 0px;
 }
 .flex{
 	display: flex;
@@ -778,6 +772,10 @@ video {
 	--tw-bg-opacity: 1;
 	background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
 }
+.bg-red-200{
+	--tw-bg-opacity: 1;
+	background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+}
 .bg-gradient-to-tr{
 	background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
@@ -832,6 +830,9 @@ video {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.pt-4{
+	padding-top: 1rem;
+}
 .pb-10{
 	padding-bottom: 2.5rem;
 }
@@ -849,9 +850,6 @@ video {
 }
 .pt-10{
 	padding-top: 2.5rem;
-}
-.pt-4{
-	padding-top: 1rem;
 }
 .text-center{
 	text-align: center;
@@ -912,6 +910,38 @@ video {
 .text-gray-700{
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+.text-indigo-800{
+	--tw-text-opacity: 1;
+	color: rgba(55, 48, 163, var(--tw-text-opacity));
+}
+.text-gray-600{
+	--tw-text-opacity: 1;
+	color: rgba(75, 85, 99, var(--tw-text-opacity));
+}
+.text-gray-800{
+	--tw-text-opacity: 1;
+	color: rgba(31, 41, 55, var(--tw-text-opacity));
+}
+.text-indigo-400{
+	--tw-text-opacity: 1;
+	color: rgba(129, 140, 248, var(--tw-text-opacity));
+}
+.text-gray-100{
+	--tw-text-opacity: 1;
+	color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+.text-yellow-300{
+	--tw-text-opacity: 1;
+	color: rgba(252, 211, 77, var(--tw-text-opacity));
+}
+.text-yellow-400{
+	--tw-text-opacity: 1;
+	color: rgba(251, 191, 36, var(--tw-text-opacity));
+}
+.text-yellow-500{
+	--tw-text-opacity: 1;
+	color: rgba(245, 158, 11, var(--tw-text-opacity));
 }
 .shadow-xl{
 	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -1027,8 +1057,7 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-	-webkit-text-decoration: underline dotted;
-	        text-decoration: underline dotted;
+	text-decoration: underline dotted;
 }
 /**
 Add the correct font weight in Edge and Safari.
@@ -1314,14 +1343,6 @@ img {
 textarea {
   resize: vertical;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #bdbdbd;
-}
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  opacity: 1;
-  color: #bdbdbd;
-}
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -1424,7 +1445,7 @@ video {
 .pointer-events-auto{pointer-events:auto}
 .relative{position:relative}
 .absolute{position:absolute}
-.sticky{position:-webkit-sticky;position:sticky}
+.sticky{position:sticky}
 .fixed{position:fixed}
 .inset-0{top:0px;right:0px;bottom:0px;left:0px}
 .right-4{right:1rem}
@@ -1550,7 +1571,7 @@ video {
 .min-w-0{min-width:0px}
 .max-w-7xl{max-width:80rem}
 .max-w-full{max-width:100%}
-.max-w-max{max-width:-webkit-max-content;max-width:max-content}
+.max-w-max{max-width:max-content}
 .max-w-sm{max-width:24rem}
 .max-w-6xl{max-width:72rem}
 .max-w-3xl{max-width:48rem}
@@ -1566,7 +1587,7 @@ video {
 .-translate-y-10{--tw-translate-y:-2.5rem}
 .cursor-pointer{cursor:pointer}
 .cursor-not-allowed{cursor:not-allowed}
-.select-none{-webkit-user-select:none;-ms-user-select:none;user-select:none}
+.select-none{-webkit-user-select:none;user-select:none}
 .resize-none{resize:none}
 .list-none{list-style-type:none}
 .flex-col{flex-direction:column}
@@ -1585,11 +1606,11 @@ video {
 .gap-2{gap:0.5rem}
 .gap-3{gap:0.75rem}
 .gap-1{gap:0.25rem}
-.gap-x-2{-webkit-column-gap:0.5rem;column-gap:0.5rem}
+.gap-x-2{column-gap:0.5rem}
 .gap-y-8{row-gap:2rem}
-.gap-x-24{-webkit-column-gap:6rem;column-gap:6rem}
+.gap-x-24{column-gap:6rem}
 .gap-y-4{row-gap:1rem}
-.gap-x-8{-webkit-column-gap:2rem;column-gap:2rem}
+.gap-x-8{column-gap:2rem}
 .space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}
 .overflow-hidden{overflow:hidden}
 .overflow-y-scroll{overflow-y:scroll}
@@ -1947,11 +1968,7 @@ video {
 .text-opacity-60{--tw-text-opacity:0.6}
 .no-underline{text-decoration:none}
 .antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-.placeholder-white:-ms-input-placeholder{--tw-placeholder-opacity:1;color:rgba(255, 255, 255, var(--tw-placeholder-opacity))}
-.placeholder-white::-webkit-input-placeholder{--tw-placeholder-opacity:1;color:rgba(255, 255, 255, var(--tw-placeholder-opacity))}
 .placeholder-white::placeholder{--tw-placeholder-opacity:1;color:rgba(255, 255, 255, var(--tw-placeholder-opacity))}
-.placeholder-opacity-50:-ms-input-placeholder{--tw-placeholder-opacity:0.5}
-.placeholder-opacity-50::-webkit-input-placeholder{--tw-placeholder-opacity:0.5}
 .placeholder-opacity-50::placeholder{--tw-placeholder-opacity:0.5}
 .opacity-50{opacity:0.5}
 .opacity-0{opacity:0}
@@ -2035,26 +2052,16 @@ video {
         transition-duration:300ms;
     }
 .mt-input:focus + label:after{--tw-scale-x:1}
-.mt-input:not(:-ms-input-placeholder) + label span {
-        top: -14%;
-    }
 .mt-input:focus + label span,
     .mt-input:not(:placeholder-shown) + label span {
         top: -14%;
     }
-.mt-input:not(:-ms-input-placeholder) + label span{font-size:0.75rem;line-height:1rem;line-height:1.25}
 .mt-input:focus + label span, .mt-input:not(:placeholder-shown) + label span{font-size:0.75rem;line-height:1rem;line-height:1.25}
-.texterea:not(:-ms-input-placeholder) + label span {
-        top: -22px !important;
-    }
 .texterea:focus + label span,
     .texterea:not(:placeholder-shown) + label span {
         top: -22px !important;
     }
 /* Material Tailwind Input Outline */
-.mt-input-outline:not(:-ms-input-placeholder) {
-        border-top: transparent !important;
-    }
 .mt-input-outline:focus,
     .mt-input-outline:not(:placeholder-shown) {
         border-top: transparent !important;
@@ -2062,14 +2069,12 @@ video {
 .mt-input-outline + label {
         line-height: 3.625 !important;
     }
-.mt-input-outline:not(:-ms-input-placeholder) + label{font-size:0.75rem !important;line-height:1rem !important;line-height:1.25 !important}
 .mt-input-outline:focus + label, .mt-input-outline:not(:placeholder-shown) + label{font-size:0.75rem !important;line-height:1rem !important;line-height:1.25 !important}
 .mt-input-outline + label:before,
     .mt-input-outline + label:after {
         content: '';
     }
 .mt-input-outline + label:before, .mt-input-outline + label:after{pointer-events:none;margin-top:0.375rem;box-sizing:border-box;display:block;height:0.5rem;width:0.625rem;border-width:1px;border-top-width:2px;border-bottom-width:0px;border-left-width:0px;border-right-width:0px;border-color:transparent}
-.mt-input-outline:not(:-ms-input-placeholder) + label:before, .mt-input-outline:not(:-ms-input-placeholder) + label:after{border-top-width:1px;--tw-border-opacity:1;border-color:rgba(224, 224, 224, var(--tw-border-opacity))}
 .mt-input-outline:not(:placeholder-shown) + label:before, .mt-input-outline:not(:placeholder-shown) + label:after{border-top-width:1px;--tw-border-opacity:1;border-color:rgba(224, 224, 224, var(--tw-border-opacity))}
 .mt-input-outline:focus + label::before, .mt-input-outline:focus + label::after{border-top-width:2px}
 .mt-input-outline + label:before{margin-right:0.25rem;border-top-left-radius:0.5rem}
@@ -2181,9 +2186,7 @@ video {
 .mt-input-outline-deep-purple-500:focus, .mt-input-outline-deep-purple-500:focus + label, .mt-input-outline-deep-purple-500:focus + label:before, .mt-input-outline-deep-purple-500:focus + label:after{--tw-border-opacity:1;border-color:rgba(103, 58, 183, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(103, 58, 183, var(--tw-text-opacity))}
 .mt-input-outline-pink-500:focus, .mt-input-outline-pink-500:focus + label, .mt-input-outline-pink-500:focus + label:before, .mt-input-outline-pink-500:focus + label:after{--tw-border-opacity:1;border-color:rgba(233, 30, 99, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(233, 30, 99, var(--tw-text-opacity))}
 .mt-input-outline-red-500:focus, .mt-input-outline-red-500:focus + label, .mt-input-outline-red-500:focus + label:before, .mt-input-outline-red-500:focus + label:after{--tw-border-opacity:1;border-color:rgba(244, 67, 54, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(244, 67, 54, var(--tw-text-opacity))}
-.mt-input-outline-error:not(:-ms-input-placeholder) + label, .mt-input-outline-error:not(:-ms-input-placeholder) + label:before, .mt-input-outline-error:not(:-ms-input-placeholder) + label:after{--tw-border-opacity:1;border-color:rgba(244, 67, 54, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(244, 67, 54, var(--tw-text-opacity))}
 .mt-input-outline-error:not(:placeholder-shown) + label, .mt-input-outline-error:not(:placeholder-shown) + label:before, .mt-input-outline-error:not(:placeholder-shown) + label:after{--tw-border-opacity:1;border-color:rgba(244, 67, 54, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(244, 67, 54, var(--tw-text-opacity))}
-.mt-input-outline-success:not(:-ms-input-placeholder) + label, .mt-input-outline-success:not(:-ms-input-placeholder) + label:before, .mt-input-outline-success:not(:-ms-input-placeholder) + label:after{--tw-border-opacity:1;border-color:rgba(76, 175, 80, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(76, 175, 80, var(--tw-text-opacity))}
 .mt-input-outline-success:not(:placeholder-shown) + label, .mt-input-outline-success:not(:placeholder-shown) + label:before, .mt-input-outline-success:not(:placeholder-shown) + label:after{--tw-border-opacity:1;border-color:rgba(76, 175, 80, var(--tw-border-opacity));--tw-text-opacity:1;color:rgba(76, 175, 80, var(--tw-text-opacity))}
 /* Material Tailwind Radio Button and Checkbox Colors */
 .mt-radio-blue-gray-500:checked + label span, .mt-radio-blue-gray-500 + label span::before, .mt-checkbox-blue-gray-500:checked + label span, .mt-checkbox-blue-gray-500 + label span::before{--tw-border-opacity:1;border-color:rgba(96, 125, 139, var(--tw-border-opacity));--tw-bg-opacity:1;background-color:rgba(96, 125, 139, var(--tw-bg-opacity));--tw-bg-opacity:0.2}
@@ -2509,11 +2512,11 @@ video {
     scroll-behavior: smooth;
 }
 .App{
-    background: #acb6e570;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: #acb6e570;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #86fde870, #acb6e570); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .AdminNavbar{
-    background: #2193b0;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+background: #2193b0;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
@@ -2541,6 +2544,14 @@ background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Fi
 	}
 	.sm\:pt-16{
 		padding-top: 4rem;
+	}
+	.sm\:text-lg{
+		font-size: 1.125rem;
+		line-height: 1.75rem;
+	}
+	.sm\:text-sm{
+		font-size: 0.875rem;
+		line-height: 1.25rem;
 	}
 }
 @media (min-width: 768px){
@@ -2579,11 +2590,11 @@ background: linear-gradient(to left, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Fi
 	}
 }
 @media (min-width: 1280px){
-	.xl\:col-end-4{
-		grid-column-end: 4;
-	}
 	.xl\:col-end-8{
 		grid-column-end: 8;
+	}
+	.xl\:col-end-4{
+		grid-column-end: 4;
 	}
 	.xl\:col-end-6{
 		grid-column-end: 6;

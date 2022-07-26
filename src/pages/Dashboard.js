@@ -13,12 +13,9 @@ export default function Dashboard({playedArray,wonArray,teamsShort,topPlayers,to
         <>
             <div className="AdminNavbar m-0 md:px-8 h-40 max-w-screen"/>
 
-            <div className="m-0 px-2 md:px-8 -mt-24">
+            <div className="m-0 px-2 md:px-8 -mt-32">
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-7">
-                        {/* <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
-                            <ChartLine />
-                        </div> */}
                         <div className="xl:col-start-1 xl:col-end-8 px-0 mb-10">
                             <ChartBar 
                             playedArray={playedArray}

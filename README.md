@@ -5,12 +5,9 @@
 Renders data beautifully and easy-to understand manner from a Kaggle Dataset of IPL matches between 2007 to 2017
 <br/>
 
-### Developed by Prakhar Tandon
+**Developed by Prakhar Tandon**
 
-## BONUSES from Klutchh
-
->> All Bonus Done, only one Partial
-
+## Highlights
 - ✅ Made Using ReactJS
 - ✅ 100% responsive
 - ✅ PWA
@@ -18,7 +15,6 @@ Renders data beautifully and easy-to understand manner from a Kaggle Dataset of 
 <br />Loads a page "offline.html" while offline ( stored in cache using ServiceWorker )
 - ✅ Optimised Load Time 
 <br />Optimal algorithms + index.html is also cached
-
 
 
 Link to Dataset : https://www.kaggle.com/saurav9786/indian-premier-league-match-analysis
@@ -39,7 +35,7 @@ ChartsJS is used to render the chart components such as Bar graphs and Doughnut 
 - Single Page Application (SPA)
 - Optimised Loading Time (index.html is also cached)
 
-## Deploy :Link
+## Deploy Link
 https://prakhar-ipl-dashboard.netlify.app/
 
 ## Dependencies
@@ -51,6 +47,13 @@ Used for ui components namely card components, sidebar, navbar with Tailwind and
 The dependency for ChartJS
 - react , react-dom , react-router-dom
 used for using React, JSX and build SPA
+
+## Local Setup
+- `yarn start`
+<br /> To start the development server
+
+- `yarn build`
+<br /> To build the project
 
 #### Thanks for visiting, Do start the Repo.
 
