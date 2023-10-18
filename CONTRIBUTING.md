@@ -1,6 +1,7 @@
 ## Making Contributions
 
 - Fork or clone the repository & run locally as per README.
+- PR to ONLY DEV BRANCH
 - Work on your local copy of repo, then create a PR with valid description.
 
 - Add your name in this file in format below.
