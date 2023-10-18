@@ -3,7 +3,7 @@ import Chart from 'chart.js';
 import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
-import WinnerPie from './WinnerPie.js';
+import WinnerPie from './WinnerPie.jsx';
 export default function ChartBar({playedArray,wonArray,teamsShort}) {
     useEffect(() => {
         let config = {
