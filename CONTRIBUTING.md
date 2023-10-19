@@ -7,7 +7,7 @@
 - Add your name in this file in format below.
 
 ## Contributors
-- Prakhar Tandon - ( [twitter.com/](https://twitter.com/PrakharTandon29)https://twitter.com/PrakharTandon29 )
-
+- Prakhar Tandon - [twitter.com/PrakharTandon29](https://twitter.com/PrakharTandon29)
+- Soni Kumari - [github.com/codewithsonyy](https://github.com/codewithsonyy)
 
 Thanks!
