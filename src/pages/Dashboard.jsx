@@ -7,8 +7,9 @@ import csk from '../assets/img/csk.png'
 import rr from '../assets/img/rr.png'
 import DounutChart from '../components/DounutChart';
 import { CardHeader } from '@material-tailwind/react';
+import MatchesLine from '../components/MatchesLine';
 
-export default function Dashboard({playedArray,wonArray,teamsShort,topPlayers,tossWinnerMatchWinner,totalMatch,field}) {
+export default function Dashboard({playedArray,wonArray,teamsShort,topPlayers,tossWinnerMatchWinner,totalMatch,field,yearsOfIplArray,totalMatchesArray}) {
     return (
         <>
             <div className="AdminNavbar m-0 md:px-8 h-40 max-w-screen"/>
@@ -98,6 +99,17 @@ export default function Dashboard({playedArray,wonArray,teamsShort,topPlayers,to
                                 <li className='flex justify-around'><span>Choose to Bowl (Green) :</span> <span>{field}</span></li>
                             </ul>
                         </div>
+
+                        {/* Line graph added */}
+                        <div className="xl:col-start-3 xl:col-end-6 px-4 mb-14   ">
+                        <MatchesLine 
+                            yearsOfIplArray={yearsOfIplArray}
+                            totalMatchesArray={totalMatchesArray}
+              />
+              
+                        </div>
+                  
+      
 
                     </div>
                 </div>

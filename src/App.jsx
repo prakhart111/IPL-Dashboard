@@ -34,6 +34,7 @@ const teamsShort = ["RCB","SRH","MI","RSPs","RSP","GL","KKR","DD","KXIP","CSK","
     ];
     const wonArray =[]
     const playedArray =[]
+    const totalMatchesArray=[]
     teams.forEach( (team)=>{
         let won=0;
         let play=0;
@@ -53,12 +54,16 @@ const teamsShort = ["RCB","SRH","MI","RSPs","RSP","GL","KKR","DD","KXIP","CSK","
         wonArray.push(won)
         playedArray.push(play)
     } )
+   
     // console.log(WonPlayed)
 
     //Player of Match
     const playerOfMatchSet = new Set(); 
+    // to get unique seasons
+    const yearsOfIplSet = new Set(); 
     data.forEach((dataItem)=>{
         playerOfMatchSet.add(dataItem["player_of_match"])
+        yearsOfIplSet.add(dataItem["season"])
     })
     
 
@@ -82,6 +87,21 @@ const teamsShort = ["RCB","SRH","MI","RSPs","RSP","GL","KKR","DD","KXIP","CSK","
     const playerOfMatchArray = [...playerOfMatchDS].sort(
       (a,b)=>b.count - a.count
     )
+    // set to array and sorting years in ascending 
+    const yearsOfIplArray = Array.from(yearsOfIplSet).sort((a,b)=>a-b);
+
+    // calculating total matches year wise
+    yearsOfIplArray.forEach( (year)=>{
+  
+      let matches=0;
+      data.forEach( (dataItem)=>{
+         if(dataItem["season"] === year){matches++;
+        }
+      })
+      totalMatchesArray.push(matches);
+      
+  } )
+   
     const topPlayers = playerOfMatchArray.slice(0,10)
 
     //Pie chart to show if the toss winner also wins match
@@ -114,6 +134,8 @@ const teamsShort = ["RCB","SRH","MI","RSPs","RSP","GL","KKR","DD","KXIP","CSK","
                             topPlayers={topPlayers}
                             totalMatch={totalMatch}
                             tossWinnerMatchWinner={tossWinnerMatchWinner}
+                            yearsOfIplArray={yearsOfIplArray}
+                            totalMatchesArray={totalMatchesArray}
                             field={field}/>
                     </Route>
                     <Route exact path="/teams">
